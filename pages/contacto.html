@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Social Tree</title>
+    <link rel="icon" href="../assets/imgs/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/stylesheet.css">
+</head>
+
+<body>
+    <nav>
+
+        <div class="topnav">
+            <a href="../index.html"><img src="../assets/imgs/nube-long.png" alt="nube" width="250px"></a>
+            <a href="../index.html">HOME</a>
+            <a href="./multimedia.html">MULTIMEDIA</a>
+            <a href="./contacto.html">CONTACTO</a>
+            <a href="./helpus.html">AYUDANOS A MEJORAR</a>
+            <a href="./faqs.html">FAQS</a>
+
+        </div>
+    </nav>
+
+    <main>
+
+        <div class="cover">
+            <img src="../assets/imgs/ayuda-mutua.jpg" width="1200px" alt="ayuda-mutua">
+        </div>
+
+
+        <div class="formulario">
+
+            <form method="POST" enctype="multipart/form-data">
+
+                <fieldset>
+                    <legend> Formulario de contacto </legend>
+
+                    <div class="nombre-apellido">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="name" placeholder="Escribe aqui...">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" name="apellido" id="apellido" placeholder="Escribe aqui...">
+                    </div>
+
+                    <div class="email">
+                        <label for="email">E-Mail</label>
+                        <input type="email" id="email" name="email" placeholder="Escribe aqui...">
+                    </div>
+
+                    <div class="sexo-edad">
+                        <label for="sexo-h">Hombre</label>
+                        <input type="radio" name="sexo" id="sexo-h">
+                        <!--"name" debe tener el mismo nombre para que "radio" funcione correctamente-->
+                        <label for="sexo-m">Mujer</label>
+                        <input type="radio" name="sexo" id="sexo-m">
+                        <label id="edad" for="edad">Edad</label>
+                        <input type="number" min="1" max="100">
+
+                    </div>
+                    <hr>
+
+                    <div class="checkboxes">
+                        <!--Primero va "input" y despues "label" para que te quede alineado-->
+                        <p>Como nos conociste?</p>
+
+                        <input type="checkbox" name="twitter" id="twitter" value="twitter">
+                        <label for="twitter">Twitter</label><br>
+
+                        <input type="checkbox" name="instagram" id="instagram" value="instagram">
+                        <label for="instagram">Instagram</label><br>
+
+                        <input type="checkbox" name="facebook" id="facebook" value="facebook">
+                        <label for="facebook">Facebook</label><br>
+
+                        <input type="checkbox" name="telegram" id="telegram" value="telegram">
+                        <label for="telegram">Telegram</label><br>
+
+                        <input type="checkbox" name="snapchat" id="snapchat" value="snapchat">
+                        <label for="snapchat">Snapchat</label><br>
+
+
+                    </div>
+                    <hr>
+                    <div class="referencias">
+                        <label for="referencias">Escribinos tu consulta</label><br>
+                        <textarea name="referencias" id="referencias" placeholder="Escribe aqui..." cols="30"
+                            rows="10"></textarea>
+                    </div>
+
+                    <div class="enviar-reset">
+                        <input type="submit" name="enviar" id="enviar">
+                        <input type="reset" name="reset" id="reset">
+                    </div>
+
+                </fieldset>
+            </form>
+
+        </div>
+    </main>
+
+
+    <div id="up-arrow">
+        <a href="#top"><img src="../assets/webicons/up-arrow/up-arrow.png" width="50px" alt="up-arrow"></a>
+    </div>
+
+    <footer>
+        <ul id="footer">
+            <div class="videos-gatitos">
+                <p>videos de gatitos</p>
+                <li><a href="#videogatito1">videogatito 1</a></li>
+                <li><a href="#videogatito2">videogatito 2</a></li>
+                <li><a href="#videogatito3">videogatito 3</a></li>
+                <li><a href="#videogatito4">videogatito 4</a></li>
+            </div>
+
+            <div class="links-inutiles">
+                <p>links inutiles</p>
+                <li><a href="#linkinutil1">linkinutil 1</a></li>
+                <li><a href="#linkinutil2">linkinutil 2</a></li>
+                <li><a href="#linkinutil3">linkinutil 3</a></li>
+                <li><a href="#linkinutil4">linkinutil 4</a></li>
+            </div>
+
+            <div class="conocen-mas">
+                <p>Sobre nosotros</p>
+                <li><a href="#quienes">quienes somos</a></li>
+                <li><a href="#novedades">novedades</a></li>
+                <li><a href="#empresa">la empresa</a></li>
+                <li><a href="#accion">accion social</a></li>
+            </div>
+
+            <div class="redes">
+                <p>nuestras redes</p>
+                <li><a href="#instagram">Instagram</a></li>
+                <li><a href="#facebook">Facebook</a></li>
+                <li><a href="#twitter">Twitter</a></li>
+                <li><a href="#tiktok">Tik Tok</a></li>
+            </div>
+
+            <div class="links-utiles">
+                <p> informacion util</p>
+                <li><a href="#cookies">politica de cookies</a></li>
+                <li><a href="#privacidad">politica de privacidad</a></li>
+                <li><a href="#general">condiciones generales</a></li>
+                <li><a href="trabaja">trabaja con nosotros</a></li>
+            </div>
+        </ul>
+
+        <div class="copyright">
+            <p>2022 Copyright &copy; - Leonardo Pucheta - Todos los derechos reservados-
+                <a href="#">CONTACTO</a>
+            </p>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
