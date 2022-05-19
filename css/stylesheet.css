@@ -9,12 +9,12 @@ body {
 }
 
 /*ESTILO DE COVER*/
-.cover>img{
-    
+.cover>img {
+
     display: flex;
     border-radius: 0px;
     margin: 0 auto;
-    filter: blur(200px); 
+    filter: blur(200px);
     margin-top: 35px;
     position: relative;
 }
@@ -28,23 +28,20 @@ body {
     padding: 30px;
     align-items: center;
     height: 100%;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-color: #000000;
 }
 
 
 .topnav a {
     text-decoration: none;
-    position: sticky;
-    top: 0;
-    
 
 }
 
 /*FIN DE ESTILO DE LA BARRA DE NAVEGACION*/
 
 /* ESTILO DE FORMULARIO*/
-.formulario{
+.formulario {
     margin-top: -750px;
     position: relative;
 }
@@ -100,7 +97,7 @@ form {
 
 /*ESTILO DE ICONOS HOME*/
 
-.repositorio{
+.repositorio {
     margin-top: -750px;
     position: relative;
 }
@@ -186,14 +183,14 @@ form {
 
 
 /*ESTILO DE MULTIMEDIA*/
-.multimedia{
+.multimedia {
     display: flex;
     flex-direction: column;
     position: relative;
     margin-top: -750px;
- 
-    
-    
+
+
+
 
 }
 
@@ -302,11 +299,11 @@ img {
 
 /*ESTILO DE FAQS*/
 
-.faqs{
+.faqs {
     margin-top: -750px;
     position: relative;
-    
-    
+
+
 
 }
 
@@ -369,7 +366,7 @@ img {
 } */
 
 
-.helpus{
+.helpus {
     display: flex;
     /* margin: 0 auto; */
     position: absolute;
@@ -382,11 +379,11 @@ img {
     width: 23%;
     padding: 15px;
     /* border-radius: 5%; */
-   
-        
+
+
 }
 
-#helpus-fstl{
+#helpus-fstl {
     font-size: 60px;
     margin-left: 10px;
     text-align: right;
@@ -394,19 +391,21 @@ img {
 
 }
 
-#helpus-scndl{
+#helpus-scndl {
     font-size: 40px;
     margin-right: 150px;
-    color: #ffffff ;
+    color: #ffffff;
 }
+
 /*FIN DE ESTILO DE HELPUS*/
 
 
 /*ESTILO DE FOOTER*/
-#footer {  
+#footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     list-style: none;
+    align-items: center;
 }
 
 footer {
@@ -415,7 +414,7 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    margin-top: 100px;
+    margin-top: 300px;
     background-color: #000000;
     text-transform: uppercase;
     font-size: 12px;
@@ -441,7 +440,8 @@ footer {
 }
 
 #footer div {
-    padding: 20px;
+    margin-bottom: 35px;
+
 }
 
 #footer p {
@@ -468,26 +468,19 @@ hr {
 .copyright a:hover {
     color: #83e3d3;
 }
+
 /*FIN DE ESTILO DE FOOTER*/
 
 
 
 /*ESTILO DE UP-ARROW*/
-html{
+html {
     scroll-behavior: smooth;
 
 }
 
-#up-arrow{
-    display: flex;
-    justify-content: right;
-    position: relative;   
-    top: 225px;
-    right: 25px;
-    z-index: 2 ;
+#up-arrow:hover {
+    opacity: 0.7;
 }
 
-#up-arrow:hover{
-opacity: 0.7;
-}
 /*FIN DE ESTILO DE UP-ARROW*/
