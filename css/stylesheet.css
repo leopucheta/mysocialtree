@@ -154,12 +154,12 @@ div.multimedia,
 div.multimedia1,
 div.multimedia2,
 div.multimedia3 {
-    background: linear-gradient(83deg, rgba(29, 29, 29, 1) 0%, rgba(46, 46, 46, 1) 91%);
     border-radius: 5px;
     position: relative;
-    width: 100%;
-    overflow: hidden;
     padding-bottom: 56.25%;
+    margin-bottom: 75px;
+    
+    
 
 
 }
@@ -225,22 +225,24 @@ form {
 
 .helpus {
     background: linear-gradient(83deg, rgba(29, 29, 29, 1) 0%, rgba(46, 46, 46, 1) 91%);
+    padding: 25px;
 }
 
 
 .helpus-border {
     margin: 0 auto;
     border: #83e3d3 double 6px;
-    width: 35%;
-    padding: 15px;
+    width: 45%;
+    padding: 20px;
     margin-top: 25px;
     margin-bottom: 25px;
-
+    
+    
 
 }
 
 #helpus-text-fstl {
-    font-size: 40px;
+    font-size: 25px;
     margin-left: 10px;
     text-align: right;
     color: rgb(255, 255, 255);
@@ -257,6 +259,7 @@ form {
 .faqs {
     background: linear-gradient(83deg, rgba(29, 29, 29, 1) 0%, rgba(46, 46, 46, 1) 91%);
     border-radius: 10px;
+    padding: 25px;
 
 
 
@@ -289,6 +292,10 @@ form {
 
 h6 {
     margin-bottom: 75px;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 /*ESTILO*/
@@ -468,28 +475,28 @@ p {
     .helpus-border {
         margin: 0 auto;
         border: #83e3d3 double 6px;
-        width: 30%;
+        width: 50%;
         padding: 30px;
         margin-top: 150px;
         margin-bottom: 150px;
+        
 
 
 
     }
 
     #helpus-text-fstl {
-        font-size: 50px;
-        margin-left: 150px;
+        font-size: 35px;        
         text-align: right;
         color: rgb(255, 255, 255);
 
     }
 
     #helpus-text-scndl {
-        font-size: 30px;
+        font-size: 20px;
         margin-right: 150px;
         color: #ffffff;
-        text-align: start;
+        
     }
 
     #main-helpus {
@@ -671,49 +678,6 @@ footer a{
 
 
     /*HELPUS DESKTOP*/
-
-
-    .helpus {
-        background: linear-gradient(83deg, rgba(29, 29, 29, 1) 0%, rgba(46, 46, 46, 1) 91%);
-        border-radius: 10px;
-        margin-left: 40px;
-
-    }
-
-
-    .helpus-border {
-        margin: 0 auto;
-        border: #83e3d3 double 6px;
-        width: 30%;
-        padding: 30px;
-        margin-top: 150px;
-        margin-bottom: 150px;
-
-
-
-    }
-
-    #helpus-text-fstl {
-        font-size: 50px;
-        margin-left: 150px;
-        text-align: right;
-        color: rgb(255, 255, 255);
-
-    }
-
-    #helpus-text-scndl {
-        font-size: 30px;
-        margin-right: 150px;
-        color: #ffffff;
-        text-align: start;
-    }
-
-    #main-helpus {
-        margin: auto;
-
-    }
-
-
     /*HELPUS DESKTOP*/
 
     /*FAQS DESKTOP*/
