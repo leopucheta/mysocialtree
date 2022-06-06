@@ -51,8 +51,6 @@ section.webdev {
     display: grid;
     border-radius: 5px;
     gap: 10px;
-    justify-items: stretch;
-    align-items: stretch;
     grid-template-areas:
         "titulo titulo titulo titulo";
     background: linear-gradient(83deg, rgba(29, 29, 29, 1) 0%, rgba(46, 46, 46, 1) 91%);
@@ -158,21 +156,11 @@ div.multimedia3 {
     position: relative;
     padding-bottom: 56.25%;
     margin-bottom: 75px;
-    
-    
+
+
 
 
 }
-
-/* section.multimedia iframe {
-    margin-right: 15px;
-    width:fit-content;
-    height: fit-content;
-    border-radius: 10px;
-
-
-
-} */
 
 .multi-netflix,
 .multi-disney,
@@ -183,8 +171,8 @@ div.multimedia3 {
     left: 0;
     bottom: 0;
     right: 0;
-    width: 75%;
-    height: 75%;
+    width: 100%;
+    height: 100%;
     border: none;
     display: flex;
     justify-items: center;
@@ -192,7 +180,7 @@ div.multimedia3 {
     margin-top: 75px;
     border-radius: 10px;
 
-    
+
 }
 
 form {
@@ -236,8 +224,8 @@ form {
     padding: 20px;
     margin-top: 25px;
     margin-bottom: 25px;
-    
-    
+
+
 
 }
 
@@ -294,7 +282,7 @@ h6 {
     margin-bottom: 75px;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -345,7 +333,7 @@ p {
 
 @media screen and (min-width:1024px) {
 
-    /*DESKTOP GRIDS*/
+    /*LAPTOP GRIDS*/
     .grid-container {
         display: grid;
         background-color: rgb(0, 0, 0);
@@ -376,10 +364,10 @@ p {
 
 
 
-    /*DESKTOP GRIDS*/
+    /*LAPTOP GRIDS*/
 
 
-    /*NAVBAR DESKTOP*/
+    /*NAVBAR LAPTOP*/
     nav {
         display: flex;
         align-items: center;
@@ -389,9 +377,9 @@ p {
 
     }
 
-    /*NAVBAR DESKTOP*/
+    /*NAVBAR LAPTOP*/
 
-    /*ESTILOS DESKTOP*/
+    /*ESTILOS LAPTOP*/
     section.streaming,
     section.social,
     section.webdev {
@@ -416,18 +404,50 @@ p {
 
     }
 
-    /*ESTILOS DESKTOP*/
+    /*ESTILOS LAPTOP*/
 
 
 
-    /*MULTIMEDIA DESKTOP*/
+    /*MULTIMEDIA LAPTOP*/
 
-    
+    .multi-netflix,
+    .multi-disney,
+    .multi-primevideo,
+    .multi-paramount {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 70%;
+        height: 70%;
+        border: none;
+        display: flex;
+        justify-items: center;
+        margin: 0 auto;
+        margin-top: 75px;
+        border-radius: 10px;
+    }
+
+    div.multimedia,
+    div.multimedia1,
+    div.multimedia2,
+    div.multimedia3 {
+        border-radius: 5px;
+        position: relative;
+        padding-bottom: 56.25%;
+        
 
 
-    /*MULTIMEDIA DESKTOP*/
 
-    /*FORMULARIO DESKTOP*/
+
+    }
+
+
+    /*MULTIMEDIA LAPTOP*/
+
+
+    /*FORMULARIO LAPTOP*/
 
 
     form {
@@ -458,11 +478,11 @@ p {
     }
 
 
-    /*FORMULARIO DESKTOP*/
+    /*FORMULARIO LAPTOP*/
 
 
-    /*HELPUS DESKTOP*/
 
+    /*HELPUS LAPTOP*/
 
     .helpus {
         background: linear-gradient(83deg, rgba(29, 29, 29, 1) 0%, rgba(46, 46, 46, 1) 91%);
@@ -471,7 +491,6 @@ p {
 
     }
 
-
     .helpus-border {
         margin: 0 auto;
         border: #83e3d3 double 6px;
@@ -479,14 +498,11 @@ p {
         padding: 30px;
         margin-top: 150px;
         margin-bottom: 150px;
-        
-
-
 
     }
 
     #helpus-text-fstl {
-        font-size: 35px;        
+        font-size: 35px;
         text-align: right;
         color: rgb(255, 255, 255);
 
@@ -496,7 +512,7 @@ p {
         font-size: 20px;
         margin-right: 150px;
         color: #ffffff;
-        
+
     }
 
     #main-helpus {
@@ -505,18 +521,22 @@ p {
     }
 
 
-    /*HELPUS DESKTOP*/
+    /*HELPUS LAPTOP*/
 
-    /*FAQS DESKTOP*/
+
+
+    /*FAQS LAPTOP*/
 
     #faqs {
         margin: auto;
     }
 
-    /*FAQS DESKTOP*/
+    /*FAQS LAPTOP*/
 
 
-    /*FOOTER DESKTOP*/
+
+
+    /*FOOTER LAPTOP*/
 
     footer {
         opacity: 0.7;
@@ -541,19 +561,15 @@ p {
         margin-bottom: 10px;
     }
 
-    /* footer p{
-    
-    
-}
-footer a{
-    
-} */
 
 }
 
-/*FOOTER DESKTOP*/
+/*FOOTER LAPTOP*/
 
 
+/* LAPTOP-LAPTOP-LAPTOP-LAPTOP-LAPTOP-LAPTOP-LAPTOP-LAPTOP-LAPTOP-LAPTOP-LAPTOP-LAPTOP-LAPTOP-LAPTOP-LAPTOP-LAPTOP- */
+
+/*------------------------------------------------------------------------------------------------------------------*/
 
 /*DESKTOP-DESKTOP-DESKTOP-DESKTOP-DESKTOP-DESKTOP-DESKTOP-DESKTOP-DESKTOP-DESKTOP-DESKTOP-DESKTOP-DESKTOP-DESKTOP-*/
 
@@ -640,8 +656,42 @@ footer a{
 
     /*MULTIMEDIA DESKTOP*/
 
+    .multi-netflix,
+    .multi-disney,
+    .multi-primevideo,
+    .multi-paramount {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 70%;
+        height: 70%;
+        border: none;
+        display: flex;
+        justify-items: center;
+        margin: 0 auto;
+        margin-top: 75px;
+        border-radius: 10px;
+    }
+
+    div.multimedia,
+    div.multimedia1,
+    div.multimedia2,
+    div.multimedia3 {
+        border-radius: 5px;
+        position: relative;
+        padding-bottom: 56.25%;
+        
+
+
+
+
+    }
 
     /*MULTIMEDIA DESKTOP*/
+
+
 
     /*FORMULARIO DESKTOP*/
 
