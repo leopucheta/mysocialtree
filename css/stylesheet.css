@@ -372,9 +372,7 @@ p {
 
 
     /*NAVBAR LAPTOP*/
-    .drop-down-button{
-        display: none;
-    }
+  
 
     nav {
         display: flex;
@@ -612,21 +610,14 @@ p {
 
     }
 
-    /* #main-multimedia {
-        margin: auto;
 
-
-    } */
 
     /*DESKTOP GRIDS*/
 
 
     /*NAVBAR DESKTOP*/
 
-    .drop-down-button{
-        display: none;
-    }
-    nav {
+       nav {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
