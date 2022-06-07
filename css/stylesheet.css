@@ -383,6 +383,18 @@ p {
 
     }
 
+    
+    nav a{
+        transition: all 300ms;
+    }
+
+    nav a:hover{
+        transform: scale(1.3);
+        color: #83e3d3;
+    }
+
+  
+
     /*NAVBAR LAPTOP*/
 
     /*ESTILOS LAPTOP*/
@@ -403,6 +415,22 @@ p {
         margin-top: 22px;
         margin-bottom: 25px;
 
+    }
+
+    section.streaming>a>img,
+    section.social>a>img,
+    section.webdev>a>img{
+        transition: all 250ms;
+       
+    }
+    section.streaming>a>img:hover,
+    section.social>a>img:hover,
+    section.webdev>a>img:hover{
+        
+        opacity: 0.5;     
+        transform: scale(1.5);
+     
+        
     }
 
     section.streaming>a>img {
