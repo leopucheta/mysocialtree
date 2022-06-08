@@ -49,12 +49,14 @@ section.streaming,
 section.social,
 section.webdev {
     display: grid;
-    border-radius: 5px;
     gap: 10px;
     grid-template-areas:
         "titulo titulo titulo titulo";
     background: linear-gradient(83deg, rgba(29, 29, 29, 1) 0%, rgba(46, 46, 46, 1) 91%);
     border-radius: 5px;
+    transform: scale(0.9);
+
+
 
 
 }
@@ -89,16 +91,21 @@ section.streaming>a>img {
 
 
 /*ESTILO*/
+
+
+
 header,
 nav,
 footer {
     background: linear-gradient(83deg, rgba(29, 29, 29, 1) 0%, rgba(46, 46, 46, 1) 91%);
     border-radius: 5px;
     color: aliceblue;
-   
+
 
 }
-header, footer{
+
+header,
+footer {
     padding: 20px;
 }
 
@@ -126,8 +133,8 @@ nav a {
     justify-content: center;
     padding: 5px;
     position: sticky;
-    
-    }
+
+}
 
 
 a {
@@ -207,10 +214,6 @@ form {
     justify-content: space-evenly;
 }
 
-/* #checkboxes {
-    display: inline-block;
-    columns: 6;
-} */
 
 
 .helpus {
@@ -331,11 +334,26 @@ p {
 
 /*AREAS*/
 
+
+@media screen and (max-width:1023px) {
+    .logo-l-xl-xxl {
+        display: none;
+    }
+}
+
+
 /* LAPTOP-LAPTOP-LAPTOP-LAPTOP-LAPTOP-LAPTOP-LAPTOP-LAPTOP-LAPTOP-LAPTOP-LAPTOP-LAPTOP-LAPTOP-LAPTOP-LAPTOP-LAPTOP- */
 
 
 
 @media screen and (min-width:1024px) {
+
+
+
+    /*ANIMACION LOGO*/
+
+
+    /*ANIMACION LOGO*/
 
     /*DESKTOP GRIDS*/
     .grid-container {
@@ -366,13 +384,264 @@ p {
     }
 
 
-    
+
 
     /*LAPTOP GRIDS*/
 
 
-    /*NAVBAR LAPTOP*/
+
+    /* LAPTOP LOGO*/
+    header {
+        height: 60px;
+    }
+
+    .logo-l-xl-xxl  {
+        transform: scale(0.8);
+        bottom: 40px;
+    }
+
+    nav {
+        height: 100px;
+    }
+
+
+    .logo-xs-s-m {
+        display: none;
+    }
+
+    div.logo-l-xl-xxl {
+        position: relative;
+    }
+
+    #ojo-izquierdo,
+    #ojo-derecho,
+    #boca,
+    #cuerpo,
+    #separador,
+    #my,
+    #social,
+    #tree {
+        position: relative;
+        transform: scale(0.70);
+    }
+
+
+    #ojo-izquierdo {
+        left: -16px;
+        bottom: 25px;
+    }
+
+    #ojo-derecho {
+        left: -2px;
+        bottom: 25px;
+    }
+
+    #boca {
+        left: -36px;
+        bottom: 9px;
+    }
+
+    #cuerpo {
+        left: -120px;
+        bottom: -15px;
+    }
+
+    #separador {
+        left: -130px;
+        bottom: 10px;
+
+    }
+
+    #my {
+        left: -130px;
+        bottom: 23px;
+
+
+    }
+
+    #social {
+        left: 90px;
+        bottom: 51px;
+
+
+    }
+
+    #tree {
+        left: 65px;
+        bottom: 51px;
+
+
+    }
+
+    /*ANIMACIONES*/
+
+    #cuerpo {
+        animation: nube 1s both;
+    }
+
+    @keyframes nube {
+
+        0% {
+            transform: scale(0);
+            animation-timing-function: ease-in;
+            opacity: 0;
+        }
+
+        38% {
+            transform: scale(0.7);
+            animation-timing-function: ease-out;
+            opacity: 1;
+        }
+
+        55% {
+            transform: scale(0.4);
+            animation-timing-function: ease-in;
+        }
+
+        72% {
+            transform: scale(0.7);
+            animation-timing-function: ease-out;
+        }
+
+        81% {
+            transform: scale(0.54);
+            animation-timing-function: ease-in;
+        }
+
+        89% {
+            transform: scale(0.7);
+            animation-timing-function: ease-out;
+        }
+
+        95% {
+            transform: scale(0.65);
+            animation-timing-function: ease-in;
+        }
+
+        100% {
+            transform: scale(0.7);
+            animation-timing-function: ease-out;
+        }
+    }
+
+    #boca {
+        animation: boca 0.4s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+        animation-delay: 1s;
+    }
+
+    @keyframes boca {
+        from {
+            transform: scale(0)
+        }
+
+        80% {
+            transform: scale(0.9)
+        }
+
+        to {
+            transform: scale(0.7)
+        }
+    }
+
+
+
+
+    #ojo-derecho {
+        animation: ojo-derecho 0.2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+        animation-delay: 2s;
+
+    }
+
+    @keyframes ojo-derecho {
+        from {
+            transform: scale(0)
+        }
+
+        80% {
+            transform: scale(0.9)
+        }
+
+        to {
+            transform: scale(0.7)
+        }
+
+    }
+
+
+
+    #ojo-izquierdo {
+        animation: ojo-izquierdo 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+        animation-delay: 3s;
+    }
+
+    @keyframes ojo-izquierdo {
+        0% {
+            transform: scale(0)
+        }
+
+        10% {
+            transform: scale(0.9)
+        }
+
+        20% {
+            transform: scale(0.7)
+        }
+
+        60%,
+        90% {
+            transform: scale(0.7);
+        }
+
+        90%,
+        91% {
+            transform: scale(1, 0.1);
+        }
+
+    }
+    #separador {
+        animation: separador 0.5s ease-in both;
+        animation-delay: 4s;
+        top: -1px;
+    }
+
+    @keyframes separador {
+        0% {
+            transform: scaleY(0);
+            transform-origin: 100% 0%;
+            opacity: 1;
+        }
+
+        100% {
+            transform: scaleY(0.9);
+            transform-origin: 100% 0%;
+            opacity: 1;
+            transform: scale(0.7);
+        }
+    }
+   
+    #my,
+    #social,
+    #tree {
+        animation: texto 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        animation-delay: 5s;
+    }
+
+    @keyframes texto {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
   
+    /*ANIMACIONES*/    
+    /*LAPTOP LOGO*/
+
+
+
+    /*NAVBAR LAPTOP*/
+
 
     nav {
         display: flex;
@@ -383,17 +652,17 @@ p {
 
     }
 
-    
-    nav a{
+
+    nav a {
         transition: all 300ms;
     }
 
-    nav a:hover{
+    nav a:hover {
         transform: scale(1.3);
         color: #83e3d3;
     }
 
-  
+
 
     /*NAVBAR LAPTOP*/
 
@@ -419,18 +688,19 @@ p {
 
     section.streaming>a>img,
     section.social>a>img,
-    section.webdev>a>img{
+    section.webdev>a>img {
         transition: all 250ms;
-       
+
     }
+
     section.streaming>a>img:hover,
     section.social>a>img:hover,
-    section.webdev>a>img:hover{
-        
-        opacity: 0.5;     
+    section.webdev>a>img:hover {
+
+        opacity: 0.5;
         transform: scale(1.5);
-     
-        
+
+
     }
 
     section.streaming>a>img {
@@ -470,7 +740,7 @@ p {
         border-radius: 5px;
         position: relative;
         padding-bottom: 56.25%;
-        
+
 
 
 
@@ -588,6 +858,10 @@ p {
         align-items: center;
     }
 
+    footer a:hover{
+        color: #83e3d3;
+    }
+
     footer a img {
         display: none;
         margin: 0 auto;
@@ -595,13 +869,137 @@ p {
         margin-bottom: 10px;
     }
 
-
 }
+
 
 /*FOOTER LAPTOP*/
 
 
 /* LAPTOP-LAPTOP-LAPTOP-LAPTOP-LAPTOP-LAPTOP-LAPTOP-LAPTOP-LAPTOP-LAPTOP-LAPTOP-LAPTOP-LAPTOP-LAPTOP-LAPTOP-LAPTOP- */
+
+
+
+
+
+
+
+/*MEDIA QUERY 1070PX*/
+
+@media screen and (min-width:1070px) {
+
+    #ojo-izquierdo {
+        left: 50px;
+        bottom: 25px;
+
+
+
+    }
+
+    #ojo-derecho {
+        left: 64px;
+        bottom: 25px;
+    }
+
+    #boca {
+        left: 30px;
+        bottom: 9px;
+    }
+
+
+    #cuerpo {
+        left: -55px;
+        bottom: -15px;
+    }
+
+    #separador {
+        left: -70px;
+        bottom: 10px;
+
+    }
+
+    #my {
+        left: -70px;
+        bottom: 23px;
+
+
+    }
+
+    #social {
+        left: -90px;
+        bottom: 23px;
+
+
+    }
+
+    #tree {
+        left: 120px;
+        bottom: 50px;
+
+
+    }
+}
+
+/*MEDIA QUERY 1070PX*/
+
+/*MEDIA QUERTY 1287PX*/
+
+@media screen and (min-width:1287px) {
+
+    #ojo-izquierdo {
+        left: 100px;
+        bottom: 25px;
+
+
+
+    }
+
+    #ojo-derecho {
+        left: 114px;
+        bottom: 25px;
+    }
+
+    #boca {
+        left: 80px;
+        bottom: 9px;
+    }
+
+
+    #cuerpo {
+        left: -5px;
+        bottom: -15px;
+    }
+
+    #separador {
+        left: -20px;
+        bottom: 10px;
+
+    }
+
+    #my {
+        left: -20px;
+        bottom: 23px;
+
+
+    }
+
+    #social {
+        left: -40px;
+        bottom: 23px;
+
+
+    }
+
+    #tree {
+        left: -65px;
+        bottom: 23px;
+
+
+    }
+}
+
+
+/*MEDIA QUERY 1287PX*/
+
 
 /*------------------------------------------------------------------------------------------------------------------*/
 
@@ -638,14 +1036,64 @@ p {
 
     }
 
-
-
     /*DESKTOP GRIDS*/
 
 
-    /*NAVBAR DESKTOP*/
+    /*LOGO DESKTOP*/
 
-       nav {
+    #ojo-izquierdo {
+        left: 0px;
+        bottom: 25px;
+    }
+
+    #ojo-derecho {
+        left: 14px;
+        bottom: 25px;
+    }
+
+    #boca {
+        left: -20px;
+        bottom: 9px;
+    }
+
+
+    #cuerpo {
+        left: -105px;
+        bottom: -15px;
+    }
+
+    #separador {
+        left: -120px;
+        bottom: 10px;
+
+    }
+
+    #my {
+        left: -120px;
+        bottom: 23px;
+
+
+    }
+
+    #social {
+        left: 95px;
+        bottom: 51px;
+
+
+    }
+
+    #tree {
+        left: 70px;
+        bottom: 51px;
+
+
+    }
+
+    /*LOGO DESKTOP*/
+
+
+    /*NAVBAR DESKTOP*/
+    nav {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
@@ -654,19 +1102,18 @@ p {
 
     }
 
-    nav a{
+    nav a {
         transition: all 300ms;
     }
 
-    nav a:hover{
+    nav a:hover {
         transform: scale(1.3);
         color: #83e3d3;
     }
 
-  
-   
-    
     /*NAVBAR DESKTOP*/
+
+
 
     /*ESTILOS DESKTOP*/
     section.streaming,
@@ -685,25 +1132,26 @@ p {
         width: 55px;
         margin-top: 22px;
         margin-bottom: 25px;
-        
-        
-        
+
+
+
     }
 
     section.streaming>a>img,
     section.social>a>img,
-    section.webdev>a>img{
+    section.webdev>a>img {
         transition: all 250ms;
-       
+
     }
+
     section.streaming>a>img:hover,
     section.social>a>img:hover,
-    section.webdev>a>img:hover{
-        
-        opacity: 0.5;     
+    section.webdev>a>img:hover {
+
+        opacity: 0.5;
         transform: scale(1.5);
-     
-        
+
+
     }
 
     section.streaming>a>img {
@@ -743,7 +1191,7 @@ p {
         border-radius: 5px;
         position: relative;
         padding-bottom: 56.25%;
-        
+
 
 
 
@@ -829,6 +1277,55 @@ p {
 
 /*FOOTER DESKTOP*/
 
-
-
 /*DESKTOP-DESKTOP-DESKTOP-DESKTOP-DESKTOP-DESKTOP-DESKTOP-DESKTOP-DESKTOP-DESKTOP-DESKTOP-DESKTOP-DESKTOP-DESKTOP-*/
+
+
+/*MEDIA QUERY 1694PX*/
+
+@media screen and (min-width:1694px) {
+
+    #ojo-izquierdo {
+        left: 50px;
+        bottom: 25px;
+    }
+
+    #ojo-derecho {
+        left: 64px;
+        bottom: 25px;
+    }
+
+    #boca {
+        left: 30px;
+        bottom: 9px;
+    }
+
+
+    #cuerpo {
+        left: -55px;
+        bottom: -15px;
+    }
+
+    #separador {
+        left: -70px;
+        bottom: 10px;
+
+    }
+
+    #my {
+        left: -70px;
+        bottom: 23px;
+    }
+
+    #social {
+        left: -90px;
+        bottom: 23px;
+    }
+
+    #tree {
+        left: 120px;
+        bottom: 50px;
+
+    }
+}
+
+/*MEDIA QUERY 1694PX*/
