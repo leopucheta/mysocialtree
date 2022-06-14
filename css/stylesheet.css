@@ -75,12 +75,12 @@ section.webdev p {
 
 section.streaming>a>img,
 section.social>a>img,
-section.webdev>a>img {
-    display: flex;
+section.webdev>a>img {    
     display: inline-block;
-    align-items: center;
-    width: 50px;
-    margin: 25px;
+    margin-right: auto;
+    width: 60px;
+    margin: 20px;        
+   
 
 }
 
