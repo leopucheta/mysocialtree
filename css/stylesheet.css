@@ -614,6 +614,7 @@ section.webdev>a>img:hover {
         display: flex;        
         list-style: none;
         align-items: flex-start;
+        justify-content: space-evenly;
         padding: 20px;
     }
 
