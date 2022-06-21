@@ -73,9 +73,9 @@ section.webdev p {
 }
 
 
-section.streaming>a>img,
-section.social>a>img,
-section.webdev>a>img {    
+section.streaming a>img,
+section.social a>img,
+section.webdev a>img {    
     display: inline-block;
     margin-right: auto;
     width: 83px;
@@ -84,7 +84,11 @@ section.webdev>a>img {
 
 }
 
-section.streaming>a>img {
+.center{
+    text-align: center;
+}
+
+section.streaming a>img {
     border-radius: 50%;
 
 }
