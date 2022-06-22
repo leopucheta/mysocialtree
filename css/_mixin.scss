@@ -1,0 +1,7 @@
+@mixin logoLayersPosition($left, $bottom) {
+    left: $left;
+    bottom: $bottom;
+    position: relative;
+    transform: scale(0.5);
+
+}
