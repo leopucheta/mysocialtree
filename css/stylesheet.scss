@@ -1,6 +1,7 @@
 @import "mixin";
 @import "vars";
 @import "logo-animation";
+@import "querie";
 
 * {
     font-family: 'Josefin Sans', sans-serif;
@@ -78,14 +79,14 @@ header {
 
 
 
-    .nav-link {
-        color: $fontcolor;
+.nav-link {
+    color: $fontcolor;
 
-        &:hover {
-            color: $brandcolor;
-        }
-
+    &:hover {
+        color: $brandcolor;
     }
+
+}
 
 
 .lg-navbar a {
@@ -223,31 +224,40 @@ textarea {
     color: $inputcolor;
 }
 
-footer a,
-footer p {
-    display: flex;
-    justify-content: flex-start;
-    padding-left: 20px;
-}
+
 
 
 footer {
     background: linear-gradient(83deg, rgba(29, 29, 29, 1) 0%, rgba(46, 46, 46, 1) 91%);
     color: $fontcolor;
+
+    & p {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 20px;
+
+    }
+
+    & a {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 20px;
+        font-size: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        & img {
+            margin: 0 auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+        }
+
+    }
 }
 
 
-footer a img {
-    margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
 
-footer a {
-    font-size: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
 
 a {
     text-decoration: none;
@@ -407,79 +417,5 @@ section.webdev>a>img:hover {
 
     opacity: 0.5;
     transform: scale(1.5);
-
-}
-
-
-@media screen and (min-width:992px) {
-
-
-    .lg-navbar a {
-        display: block;
-    }
-
-    .navbar {
-        display: none;
-    }
-
-    .iframe-netflix,
-    .iframe-disney,
-    .iframe-primevideo,
-    .iframe-paramount {
-        transform: scale(0.75);
-    }
-
-    #formulario {
-        transform: scale(0.85);
-    }
-
-    #checkboxes {
-        text-align: center;
-        padding-bottom: 20px;
-    }
-
-
-    input,
-    textarea {
-        color: #000000;
-    }
-
-
-    .faqs {
-        transform: scale(0.85);
-    }
-
-
-
-    footer {
-        opacity: 0.7;
-        position: relative;
-        margin-top: 370px;
-        text-transform: uppercase;
-        font-size: 12px;
-        display: flex;
-        list-style: none;
-        align-items: flex-start;
-        justify-content: space-evenly;
-        padding: 20px;
-    }
-
-    footer a img {
-        display: flex;
-        margin: 0 auto;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-
-    footer a img {
-        margin: 0 auto;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    hr {
-        display: none;
-    }
 
 }
