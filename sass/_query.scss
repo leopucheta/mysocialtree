@@ -1,0 +1,59 @@
+@media screen and (min-width:992px) {
+    .lg-navbar a {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .iframe-netflix,
+    .iframe-disney,
+    .iframe-primevideo,
+    .iframe-paramount {
+        transform: scale(0.65);
+    }
+
+    #formulario {
+        transform: scale(0.85);
+    }
+
+    #checkboxes {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+
+    input,
+    textarea {
+        color: #000000;
+    }
+
+
+    footer {
+        opacity: 0.7;
+        position: relative;
+        margin-top: 370px;
+        text-transform: uppercase;
+        font-size: 12px;
+        display: flex;
+        list-style: none;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        padding: 20px;
+
+        & a img {
+            display: flex;
+            margin: 0 auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+    }
+}
+
+
+    hr {
+        display: none;
+    }
+

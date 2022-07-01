@@ -1,0 +1,10 @@
+@mixin parrafo{
+    margin-top: 15px;
+    border-start-start-radius: 25px;
+    border-top-right-radius: 25px;
+    background-color: map-get($colores, inputColor );
+    padding: 10px;
+    opacity: 0.85;
+    display: flex;
+    justify-content: center;
+}
