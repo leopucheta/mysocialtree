@@ -210,13 +210,13 @@ section.streaming {
   section.streaming a img {
     display: inline-block;
     margin-right: auto;
-    width: 83px;
+    width: 60px;
     margin: 25px;
     border-radius: 50%;
     transition: all 250ms; }
     section.streaming a img:hover {
       opacity: 0.5;
-      transform: scale(1.5); }
+      transform: scale(1.2); }
   section.streaming p {
     margin-top: 15px;
     border-start-start-radius: 25px;
@@ -238,7 +238,7 @@ section.social {
   section.social a img {
     display: inline-block;
     margin-right: auto;
-    width: 83px;
+    width: 60px;
     margin: 25px;
     border-radius: 50%;
     transition: all 250ms; }
@@ -266,7 +266,7 @@ section.webdev {
   section.webdev a img {
     display: inline-block;
     margin-right: auto;
-    width: 83px;
+    width: 60px;
     margin: 25px;
     border-radius: 50%;
     transition: all 250ms; }
@@ -438,9 +438,6 @@ footer {
     font-size: 15px;
     margin-top: 10px;
     margin-bottom: 10px; }
-
-.footer-desktop {
-  display: none; }
 
 @media screen and (min-width: 992px) {
   .lg-navbar a {
