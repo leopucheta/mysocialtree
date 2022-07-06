@@ -470,7 +470,8 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: static;   
+    position: static;  
+    padding: 1vh; 
 
 
     &>a,
