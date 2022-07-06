@@ -23,6 +23,7 @@ body {
 
 main{
     width: 100%;    
+    min-height: 100vh;
 }
 
 a {
@@ -298,7 +299,7 @@ section.webdev {
     .iframe-netflix,
     .iframe-disney,
     .iframe-primevideo,
-    .iframe-paramount {
+    .iframe-hbomax {
         position: absolute;
         width: 100%;
         height: 100%;
