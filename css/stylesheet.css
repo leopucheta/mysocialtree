@@ -478,7 +478,6 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 60px;
   flex-shrink: 0;
   padding: 1vh; }
   footer > a,
